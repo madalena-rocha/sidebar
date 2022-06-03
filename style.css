@@ -51,9 +51,20 @@ img {
     padding: 2.4rem 1.4rem 2.4rem 2.9rem;
 }
 
-.header img:first-child {
+.header img .logo {
     width: 6.4rem;
     height: 2.512rem;
+}
+
+.header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header button img {
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .content {
@@ -68,7 +79,8 @@ img {
     display: flex;
 }
 
-.content p, .search p {
+.content p, 
+.search p {
     font-size: 1.5rem;
     line-height: 2.2rem;
 
@@ -98,7 +110,7 @@ img {
     bottom: 0;
 }
 
-.footer img:first-child {
+.footer img .avatar {
     width: 4.5rem;
     height: 4.5rem;
 
@@ -120,9 +132,39 @@ img {
     padding: 1.8rem;
 }
 
-h2 {
+.main h2 {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 3.8rem;
 }
 
+/*=== CLOSED MENU =====================*/
+
+.aside {
+    width: 7.8rem;
+}
+
+.logo, p, span, .avatar {
+    display: none;
+}
+
+.header {
+    padding: 2.6rem 2.7rem;
+}
+
+.search {
+    margin: 0 1.4rem 2.1rem;
+}
+
+.content {
+    margin-right: 2.7rem;
+}
+
+.footer {
+    width: 7.8rem;
+    padding: 1.8rem 2.7rem 1.8rem 2.8rem;
+}
+
+.main {
+    width: calc(100vw - 7.8rem);
+}
