@@ -14,54 +14,60 @@
 </head>
 <body>
     <div class="container">
-        <div class="aside">
+        <div class="sidebar">
             <div class="header">
                 <img class="logo" src="./assets/logo.svg" alt="Logo mostrando uma cruz e uma pegada de pata de cachorro ou gato.">
-                <button onclick="closeMenu()">
+                <button id="menu-button">
                     <img src="./assets/menu.svg" alt="Menu">
                 </button>
             </div>
 
             <div class="search">
-                <img src="./assets/search.svg" alt="Lupa">
-                <p>Buscar</p>
+                <button class="search-button">
+                    <img src="./assets/search.svg" alt="Lupa">
+                </button>
+                <input type="text" placeholder="Buscar">
             </div>
         
             <div class="content">
-                <div>
+                <a href="#">
                     <img src="./assets/grid.svg" alt="Grid">
                     <p>Dashboard</p>
-                </div>
+                </a>
 
-                <div>
+                <a href="#">
                     <img src="./assets/pet.svg" alt="Pegada de pata de cachorro ou gato.">
                     <p>Pets</p>
-                </div>
+                </a>
 
-                <div>
+                <a href="#">
                     <img src="./assets/user.svg" alt="User">
                     <p>Clientes</p>
-                </div>
+                </a>
 
-                <div>
+                <a href="#">
                     <img src="./assets/vet.svg" alt="User Vet">
                     <p>Vets</p>
-                </div>
+                </a>
 
-                <div>
+                <a href="#">
                     <img src="./assets/settings.svg" alt="Engrenagem">
                     <p>Ajustes</p>
-                </div>
+                </a>
             </div>
 
             <div class="footer">
                 <img class="avatar" src="./assets/photo.jpg" alt="Mulher parda de cabelos castanhos segurando no colo
                 um cachorro amarelo e branco.">
+
                 <span>
                     <p>Eleanor Pena</p>
                     <p>Veterinária</p>
                 </span>
-                <img src="./assets/log-out.svg" alt="Log-out">
+
+                <button class="log-out">
+                    <img src="./assets/log-out.svg" alt="Log-out">
+                </button>
             </div>
         </div>
 
