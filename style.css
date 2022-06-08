@@ -148,6 +148,7 @@ img {
     justify-content: center;
 
     width: 7.8rem;
+    height: 6rem;
     padding: 1.8rem 2.7rem 1.8rem 2.8rem;
 
     background: var(--light-green);
@@ -169,8 +170,7 @@ img {
 }
 
 .footer span {
-    margin-left: 0.9rem;
-    margin-right: 4.1rem;
+    margin-inline: 0.9rem 4.1rem;
 
     pointer-events: none;
     opacity: 0;
