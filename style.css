@@ -61,6 +61,11 @@ img {
 }
 
 .header #menu-button,
+.footer .log-out {
+    position: absolute;
+}
+
+.header #menu-button,
 .search .search-button,
 .footer .log-out {
     background: none;
@@ -68,9 +73,10 @@ img {
     cursor: pointer;
 }
 
-.header #menu-button,
-.footer .log-out {
-    position: absolute;
+.header #menu-button:hover,
+.search .search-button:hover,
+.footer .log-out:hover {
+    filter: brightness(1.5);
 }
 
 .search {
