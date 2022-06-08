@@ -97,6 +97,10 @@ img {
     transition: all 0.5s ease;
 }
 
+.search input:focus {
+    outline: none;
+}
+
 .content {
     display: flex;
     flex-direction: column;
