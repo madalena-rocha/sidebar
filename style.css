@@ -199,6 +199,10 @@ img {
     width: 25rem;
 }
 
+.sidebar.active .header {
+    padding: 2.4rem 1.4rem 2.4rem 2.9rem;
+}
+
 .sidebar.active .header .logo,
 .sidebar.active .search input, 
 .sidebar.active .content p,
@@ -212,22 +216,13 @@ img {
     transition: transform 500ms;
 }
 
+.sidebar.active .search {
+    margin: 0.288rem 1.4rem 2.008rem;
+}
+
 .sidebar.active .search input,
 .sidebar.active .content p {
     visibility: visible;
-}
-
-.sidebar.active .footer .log-out {
-    transform: translateX(9.95rem);
-    transition: transform 500ms;
-}
-
-.sidebar.active .header {
-    padding: 2.4rem 1.4rem 2.4rem 2.9rem;
-}
-
-.sidebar.active .search {
-    margin: 0.288rem 1.4rem 2.008rem;
 }
 
 .sidebar.active .content a:hover {
@@ -237,6 +232,11 @@ img {
 .sidebar.active .footer {
     width: 25rem;
     padding: 0.8rem 1.5rem 0.7rem 1.3rem;
+}
+
+.sidebar.active .footer .log-out {
+    transform: translateX(9.95rem);
+    transition: transform 500ms;
 }
 
 .sidebar.active .main {
