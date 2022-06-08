@@ -56,7 +56,8 @@ img {
     width: 6.4rem;
     height: 2.512rem;
 
-    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .header #menu-button,
@@ -65,6 +66,11 @@ img {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.header #menu-button,
+.footer .log-out {
+    position: absolute;
 }
 
 .search {
@@ -86,7 +92,9 @@ img {
     background: none;
     border: none;
 
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
 
 .content {
@@ -95,7 +103,6 @@ img {
     gap: 3.4rem;
 
     margin-left: 2.7rem;
-    margin-right: 2.7rem;
 }
 
 .content a {
@@ -110,6 +117,7 @@ img {
     background-color: var(--light-green);
     border-radius: 1.2rem;
 
+    margin-inline: -1.4rem 1.4rem;
     padding: 1.3rem 1.3rem 1.392rem;
 }
 
@@ -119,7 +127,9 @@ img {
 
     margin-left: 1.3rem;
 
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
 
 .footer {
@@ -127,12 +137,15 @@ img {
     align-items: center;
     justify-content: center;
 
+    width: 7.8rem;
     padding: 1.8rem 2.7rem 1.8rem 2.8rem;
 
     background: var(--light-green);
 
     position: absolute;
     bottom: 0;
+
+    transition: all 0.5s ease;
 }
 
 .footer .avatar {
@@ -141,14 +154,17 @@ img {
 
     border-radius: 1.2rem;
 
-    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .footer span {
     margin-left: 0.9rem;
     margin-right: 4.1rem;
 
-    display: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .footer p:nth-child(2) {
@@ -178,7 +194,22 @@ img {
 .sidebar.active .content p,
 .sidebar.active .footer .avatar,
 .sidebar.active .footer span {
-    display: block;
+    opacity: 1;
+}
+
+.sidebar.active .header #menu-button {
+    transform: translateX(18.3rem);
+    transition: transform 500ms;
+}
+
+.sidebar.active .search input,
+.sidebar.active .content p {
+    visibility: visible;
+}
+
+.sidebar.active .footer .log-out {
+    transform: translateX(9.95rem);
+    transition: transform 500ms;
 }
 
 .sidebar.active .header {
@@ -189,19 +220,12 @@ img {
     margin: 0.288rem 1.4rem 2.008rem;
 }
 
-.sidebar.active .content {
-    margin-right: 0;
-}
-
 .sidebar.active .content a:hover {
-    background-color: var(--light-green);
-    border-radius: 1.2rem;
-
-    padding: 1.3rem 1.3rem 1.392rem;
-    margin-right: 1.4rem;
+    margin-inline: 0 1.4rem;
 }
 
 .sidebar.active .footer {
+    width: 25rem;
     padding: 0.8rem 1.5rem 0.7rem 1.3rem;
 }
 
