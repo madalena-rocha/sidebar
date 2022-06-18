@@ -63,6 +63,7 @@ img {
 .header #menu-button,
 .footer .log-out {
     position: absolute;
+    transition: all 0.5s ease;
 }
 
 .header #menu-button,
